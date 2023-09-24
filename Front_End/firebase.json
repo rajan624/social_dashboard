@@ -1,0 +1,20 @@
+{
+  "hosting": {
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+     "rewrites": [
+      {
+        "source": "/job-profile/**",
+        "function": "seoReplaceApi"
+      },
+      {
+         "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

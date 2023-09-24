@@ -1,0 +1,248 @@
+.mainProfileDiv {
+  width: 95vw;
+  margin: auto;
+  height: 100%;
+  gap: 30px;
+  margin-top: 2.5vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.centerText{
+  text-align: center;
+}
+.image {
+  width: 90% !important;
+  height: 90% !important;
+  border-radius: 50% !important;
+}
+
+.userDescription{
+   display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 4;
+            overflow: hidden;
+            text-overflow: ellipsis;
+}
+
+.userTags{
+ display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+}
+
+.imageBlog {
+  width: 100% !important;
+  height: 400px !important;
+}
+
+.cardDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  height: auto;
+}
+.profileDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 70vw;
+  overflow: hidden;
+  border-radius: 16px;
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    border: 1px solid;
+}
+
+.imageNameDiv {
+  display: flex;
+  flex-direction: row;
+  height: 450px;
+}
+
+.imageDiv {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nameDiv {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.followLikeDiv {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.storyDiv {
+  height: 500px;
+  display: flex;
+  overflow: auto;
+  padding: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.messageSuggestionDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 30vw;
+}
+
+.messageDiv {
+  height: 600px;
+  border-radius: 16px;
+  padding: 10px;
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    border: 1px solid;
+}
+
+.suggestionDiv {
+  height: 400px;
+  padding: 10px;
+  border-radius: 16px;
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    border: 1px solid;
+}
+
+.suggestionGroup{
+       display: flex;
+    flex-direction: row;
+    height: 302px;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+   gap: 5px; 
+}
+
+.suggestion{
+display: flex;
+    flex-direction: column;
+    width: 120px;
+    height: 120px;
+    border-radius: 16px;
+    padding: 10px;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    border: 1px solid;
+}
+
+.messages {
+  display: flex;
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
+        justify-content: flex-start;
+    gap: 30px;
+    margin: 0.3vw;
+   border: 1px solid;
+   border-radius: 16px;
+}
+.messages:hover{
+      transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+
+}
+.messagesGroup{
+    display: flex;
+    flex-direction: column;
+        overflow-y: scroll;
+    height: 500px;
+
+}
+.messagesName {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tablet mode */
+@media only screen and (min-width: 568px) and (max-width: 1024px) {
+  .mainProfileDiv {
+    flex-direction: column;
+  }
+  .messageSuggestionDiv {
+    flex-direction: row;
+    width: 95vw;
+  }
+  .profileDiv {
+    width: 95vw;
+  }
+
+  .messageDiv {
+    width: 50%;
+  }
+  .suggestionDiv {
+    width: 50%;
+    height: 600px;
+  }
+  .cardDiv {
+    width: 40vw;
+  }
+    .suggestionGroup{
+    height: 500px;
+ 
+}
+}
+
+/* General mobile devices */
+@media only screen and (max-width: 567px) {
+  /* CSS styles for mobile phones */
+  .mainProfileDiv {
+    flex-direction: column;
+  }
+  .messageSuggestionDiv {
+    flex-direction: column;
+    width: 95vw;
+  }
+  .profileDiv {
+    width: 95vw;
+  }
+  .imageNameDiv {
+    flex-direction: column;
+    height: 800px;
+  }
+  .cardDiv {
+    width: 80vw;
+  }
+  .imageDiv {
+    height: 400px;
+    width: 100%;
+  }
+  .nameDiv {
+    height: 400px;
+    width: 100%;
+  }
+  .messageDiv {
+    /* width: 50%; */
+  }
+  .suggestionDiv {
+    /* width: 50%; */
+    height: 600px;
+  }
+  .suggestionGroup{
+    height: 500px;
+ 
+}
+}
