@@ -2,6 +2,8 @@
 
 This is a comprehensive Social Media Dashboard web application built using the MERN stack (MongoDB, Express.js, React.js, and Node.js). The objective of this assignment is to showcase expertise as an experienced MERN stack developer by creating a full-fledged social media management platform.
 
+Check out the live version of the project: <a href="https://cms-web-app-07.web.app/" target="_blank">Social Dashboard</a>
+
 ## Table of Contents
 - [Features](#features)
 - [Technologies Used](#technologies-used)
